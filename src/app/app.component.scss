@@ -1,0 +1,44 @@
+@import "../assets/scss/base/mixins";
+@import "../assets/scss/base/colors";
+@import "../assets/scss/base/fonts";
+@import "../assets/scss/base/typography";
+
+.container{
+    display: flex;
+    font-family: $family;
+    height: 6.3rem;
+    align-items: center;
+    justify-content: center;
+    
+    .main-box{
+        display: flex;
+        width: 87%;
+        background-color: aqua;
+        height: 4.3rem;
+        .firstt-box{
+            display: flex;
+            align-items: center;
+            gap: 1.2em;
+            flex-direction: row;
+            justify-content: space-between;
+            .logoo{
+                display: flex;
+                width: 3em;
+                height: 3em;
+            }
+            .revo-box{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                .revo-head{
+                    font-size: 1.5rem;
+                }
+                .REVO-text{
+                    font-size: 0.5rem;
+                }
+
+            }
+        }
+    }
+}

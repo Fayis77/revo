@@ -1,0 +1,314 @@
+@import "../../assets/scss/base/fonts";
+@import "../../assets/scss/base/colors";
+@import "../../assets/scss/base/mixins";
+@import "../../assets/scss/base/typography";
+
+.main__container {
+  @include d-flex(center, center);
+  @include flex-fd-column;
+  gap: 2rem;
+  padding: 3rem 0;
+
+  .nav {
+    padding: 5em;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 11px;
+    /* margin: -20px; */
+    justify-content: center;
+    gap: 2rem;
+
+    .search {
+      text-decoration: none;
+      display: flex;
+      width: 98px;
+      align-items: center;
+      height: 31px;
+      padding: 4px;
+      justify-content: center;
+      border-radius: 40px;
+      background-color: rgb(235, 229, 229);
+      font-size: 0.9em;
+      font-family: "Montserrat", sans-serif !important;
+      box-shadow: 0px 0px 10px rgb(0 0 0 / 5%);
+    }
+
+    .pop-search {
+      padding: 3px;
+      border-radius: 40px;
+      background-color: white;
+      font-size: 1.2em;
+      text-decoration: none;
+      font-family: $family;
+    }
+  }
+
+  .maincards-1 {
+    @include d-flex(center, center);
+    gap: 2rem;
+    justify-content: center;
+    background-color: white;
+    align-items: baseline;
+    margin-top: 1em;
+
+    .subcards {
+      @include d-flex(space-between, center);
+      @include flex-fd-column;
+
+      .subcard {
+        background-color: white;
+        box-shadow: 0px 1px 16.7px rgb(52 26 73 / 45%);
+        border-radius: 9px;
+        height: 6rem;
+        width: 6rem;
+        @include d-flex(center, center);
+        position: relative;
+
+        .round-1 {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          background-color: rgba(128, 86, 178, 0.4);
+          border-radius: 40px;
+        }
+
+        .round-2 {
+          right: 1.1rem;
+          top: 1.1rem;
+          position: absolute;
+          width: 1.5rem;
+          height: 1.5rem;
+          background-color: rgb(128, 86, 178, 0.3);
+          border-radius: 40px;
+        }
+
+        .round-3 {
+          bottom: 1.4rem;
+          left: 1.4rem;
+          position: absolute;
+          height: 1rem;
+          width: 1rem;
+          background-color: rgb(128, 86, 178, 0.3);
+          align-items: center;
+          border-radius: 40px;
+        }
+      }
+
+      .subcards-text {
+        text-align: center;
+        width: 100px;
+      }
+    }
+
+    .subcards-2 .subcard .round {
+      background-color: rgba(9, 131, 9, 0.362);
+    }
+
+    .subcards-3 .subcard .round {
+      background-color: rgba(232, 21, 175, 0.362);
+    }
+
+    .subcards-4 .subcard .round {
+      background-color: rgba(221, 240, 14, 0.362);
+    }
+
+    .subcards-5 .subcard .round {
+      background-color: rgba(240, 138, 14, 0.362);
+    }
+
+    .subcards-6 .subcard .round {
+      background-color: rgba(240, 14, 142, 0.242);
+    }
+
+    .subcards-7 .subcard .round {
+      background-color: rgba(234, 207, 98, 0.362);
+    }
+
+    .subcards-8 .subcard .round {
+      background-color: rgba(66, 178, 235, 0.362);
+    }
+  }
+
+  // <!-------------------------------------------CAARDS--2------------------------------------------------------------------------->
+  .maincards-2 {
+    @include d-flex(center, center);
+    gap: 3.5rem;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    background-color: white;
+
+    .subcard {
+      @include d-flex(center, center);
+      flex-direction: column;
+      width: 22em;
+      height: 56vh;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+      font-family: $family;
+    }
+
+    .subcards1,
+    .subcards-2,
+    .subcards-3,
+    .subcard {
+      @include d-flex(center, center);
+      gap: 1.2em;
+      text-align: center;
+    }
+
+    .subcard .img-1,
+    .img-2,
+    .img-3 {
+      display: flex;
+      width: 10em;
+      height: 15vh;
+    }
+
+    .button-2 {
+      padding: 1em 1.2em;
+      border-radius: 6rem;
+      background-color: white;
+      outline: none;
+      border: 2px solid #E05206;
+      color: #E05206;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+  }
+
+  //   <---------------------------------------------CAARDS--3----------------------------------------------------------------->
+
+  .maincards-3 {
+    @include d-flex(center, center);
+    flex-direction: row;
+    font-family: $family;
+    width: 100%;
+    height: 70vh;
+    gap: 2rem;
+    background-color: rgba(23, 188, 230, 0.196);
+
+    .headings {
+      @include d-flex(center, flex-start);
+      flex-direction: column;
+      height: 10vh;
+
+      width: 95%;
+
+      align-items: flex-start;
+      position: relative;
+
+      .heading-1 {
+        text-transform: capitalize;
+      }
+
+      .headings .heading-para {
+        font-size: 1px;
+      }
+    }
+
+    .main-box {
+      @include d-flex(center, flex-start);
+      gap: 2rem;
+      flex-direction: column;
+
+      .caaards {
+        @include d-flex(center, center);
+        flex-direction: row;
+        gap: 2em;
+        position: relative;
+
+        .subcard {
+          display: flex;
+          align-items: flex-end;
+          flex-direction: column;
+          position: relative;
+          width: 22em;
+          height: 50vh;
+          border-radius: 16px;
+          font-family: $family;
+          .rent {
+              @include d-flex(center, center);
+
+              width: 3em;
+            //   height: 3vh;
+              background-color: rgb(10, 180, 237);
+              position: absolute;
+
+              left: 0px;
+              top: 1.5rem;
+              border-radius: 0 0 9px 0;
+
+              .rent-text {
+                font-size: 15px;
+                color: white;
+                font-weight: 200;
+              }
+            }
+          .image-div {
+              width: 100%;
+              
+              .apart-img {
+                  width: 100%;
+                  position: relative;
+                  height: 30vh;
+                  border-radius: 4px;
+                  
+                }
+            }
+            
+            .inner-round {
+                position: absolute;
+            top: -2em;
+            padding: 1rem;
+            border-radius: 50%;
+            background-color: white;
+            left: 1em;
+            box-shadow: 0px 0px 15px rgb(0 0 0 / 30%);
+
+            .city-img {
+              width: 3em;
+              height: 5vh;
+            }
+          }
+
+          .inner-box {
+            @include d-flex(center, flex-start);
+            flex-direction: column;
+            width: 17em;
+            position: relative;
+            height: 20vh;
+            background-color: white;
+            bottom: 45px;
+            border-radius: 10px 0 0 10px;
+            box-shadow: 0px 0px 15px rgb(0 0 0 / 30%);
+            gap: 0.7em;
+
+            .inner-container {
+              @include d-flex(center, flex-start);
+              position: relative;
+              flex-direction: column;
+              gap: 0.7em;
+              left: 13px;
+              top: 14px;
+
+              .inner-h1 {
+                font-size: 1.1rem;
+              }
+
+              .inner-h2 {
+                font-size: 1.1rem;
+              }
+
+              .inner-text {
+                font-size: 0.9rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

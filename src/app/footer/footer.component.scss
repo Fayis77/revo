@@ -1,0 +1,35 @@
+@import "../../assets/scss/base/colors";
+@import "../../assets/scss/base/fonts";
+@import "../../assets/scss/base/mixins";
+@import "../../assets/scss/base/typography";
+
+.main-box {
+  @include d-flex(space-evenly, flex-start);
+  background-color: #001b49;
+  gap: 2rem;
+  padding: 3em 0;
+  font-family: $family;
+  .box {
+    .heading {
+      font-size: 1rem;
+      color: rgb(214, 200, 200);
+      display: flex;
+    }
+    .text {
+      font-size: 1rem;
+      color: rgb(155, 144, 144);
+      margin: 1em 0;
+    }
+  }
+}
+.end {
+    @include d-flex(center,center);
+    flex-direction: column;
+  .loogoo {
+    @include d-flex(space-evenly,center);
+    font-size: 2rem;
+    width: 20rem;
+    height: 5rem;
+    background-color: white;
+  }
+}

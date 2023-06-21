@@ -1,0 +1,161 @@
+@import"../../assets/scss/base/colors";
+@import"../../assets/scss/base/fonts";
+@import"../../assets/scss/base/mixins";
+
+
+.main {
+  width: 100%;
+  height: 35rem;
+  @include d-flex(center, center);
+  background-color: #16c8ebd3;
+  position: relative;
+  box-shadow: 0 0px 10px black;
+
+  .body-content {
+    text-align: center;
+
+  }
+
+  .body-head {
+    @include text-size-weight-color(4rem, 500t, #fff);
+    margin: 0.3rem;
+
+  }
+
+  .body-text {
+    @include text-size-weight-color(1.2rem, 500t, #fff);
+    margin: 0.3rem;
+  }
+
+  .btn {
+    @include button(rgb(34, 31, 31), 3em, 1em 2.5em, white, 1.1em);
+    margin: 1em;
+    border: none;
+  }
+
+
+  .btn:hover {
+    color: white;
+    background-color: black;
+  }
+
+  .linkbutton {
+    position: absolute;
+    bottom: 2em;
+    border: 1px solid grey;
+    @include button(white, 1.5em 1.5em 0 0, none, rgb(27, 25, 25), 1em);
+
+    .ul-links {
+      @include d-flex(center, center);
+    
+      position: relative;
+      width: 839px;
+      text-decoration: none;
+      padding-bottom: 1em;
+
+      .li-links {
+        margin: 1em 3em;
+        list-style: none;
+
+
+      }
+
+      #first-list {
+        padding-left: 5rem;
+      }
+
+      #last-list {
+        padding-right: 5rem;
+      }
+    }
+  }
+
+  .search {
+    position: absolute;
+    bottom: -2em;
+  }
+
+  .searchbutton {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 64em;
+    /* height: 67px; */
+    padding: 0.5em;
+    background-color: white;
+    color: grey;
+    border-radius: 3em;
+    box-shadow: rgba(0, 0, 0, 0.3), 0 19px, 38px, rgba(0, 0, 0, 0) 0px 15px 12px;
+    align-items: center;
+    list-style: none;
+    top: 0px;
+    box-shadow: 0px 0px 10px;
+
+    .container {
+      @include d-flex(center, center)
+    }
+
+    .material-icons-round {
+      color: gray;
+      position: relative;
+      left: 1.4em;
+
+    }
+
+    #location {
+      color: black;
+      position: relative;
+      left: 33px;
+
+    }
+
+    .select {
+      border: none;
+      padding-right: 0.5rem;
+      color: grey;
+      outline: none;
+      @include position-fsize-left(1em, 2.2em);
+
+    }
+
+    .arrow {
+      position: absolute;
+      left: 6em;
+      top: 0.5em;
+      font-size: 34px;
+      font-weight: 200;
+
+    }
+
+    .inputlist {
+      .inputlist-class {
+        @include position-fsize-left(1em, 0em);
+        flex: 2em;
+        width: 100%;
+        border: none;
+        outline: none;
+
+      }
+    }
+
+    .button-list {
+      @include button(rgb(249, 15, 15), 3em, 0em 2.5em, white, 1.1em);
+
+
+      .button-li {
+
+        padding: 20px;
+        @include button(rgb(246, 21, 21), 3em, 1em 2.5em, white, 1.1em);
+        border-color: red;
+        position: relative;
+        left: 45px;
+
+
+
+
+
+      }
+    }
+  }
+
+}

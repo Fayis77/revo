@@ -1,0 +1,100 @@
+@import "../../assets/scss/base/colors";
+@import "../../assets/scss/base/fonts";
+@import "../../assets/scss/base/mixins";
+@import "../../assets/scss/base/typography";
+
+.container {
+  background-image: url(../../assets/footer.png);
+
+  display: flex;
+  height: 50vh;
+  background-size: cover;
+  align-items: center;
+  font-family: $family;
+  .main-box {
+    @include d-flex(space-around, flex-start);
+    position: relative;
+    left: 13rem;
+    flex-direction: column;
+    width: 50rem;
+    height: 20rem;
+    
+
+    .heading {
+      font-size: 4rem;
+      .whites {
+        color: white;
+      }
+    }
+    .text {
+      text-align: center;
+      .text-para {
+        color: white;
+      }
+    }
+    .box{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1em
+    }
+    .main-parent {
+      @include d-flex(center, center);
+      flex-direction: row;
+      gap: 2em;
+
+      .child-1 {
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+        border-radius: 7px;
+        padding: 0.5rem;
+        box-shadow:  2px 2.5px 6px; 
+      
+      ;
+
+        gap: 1em;
+        .imgplay {
+          @include d-flex(center, center);
+          font-size: 2em;
+        }
+        .text-cont {
+            color: azure;
+            p {
+              
+              color: white;
+              .downloadd {
+                color: white;
+              }
+            }
+          }
+      }
+      .child-2 {
+        display: flex;
+        padding: 0.5rem;
+        flex-direction: row;
+        background-color: black;
+        border-radius: 7px;
+        gap: 1rem;
+        box-shadow:  2px 2.5px 6px; 
+        .imgplay2 {
+          @include d-flex(center, center);
+          .playbtn {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+        }
+        .text-cont {
+          color: azure;
+          p {
+            
+            color: white;
+            .downloadd {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

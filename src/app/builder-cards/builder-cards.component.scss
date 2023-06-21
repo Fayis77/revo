@@ -1,0 +1,68 @@
+@import "../../assets/scss/base/colors";
+@import "../../assets/scss/base/fonts";
+@import "../../assets/scss/base/mixins";
+@import "../../assets/scss/base/typography";
+
+.last-page {
+  @include d-flex(center, center);
+  flex-direction: column;
+
+  font-family: $family;
+  .builder {
+    @include d-flex(center, center);
+    width: 70em;
+    height: 25rem;
+    flex-direction: column;
+    gap: 2em;
+    .section-1 {
+      width: 100%;
+    }
+    .builder-cards {
+      @include d-flex(space-between, center);
+      width: 70em;
+      height: 15rem;
+      gap: 1em;
+      .assistant-cards {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 12em;
+        height: 15rem;
+        background-color: white;
+        box-shadow: 0px 1px 16.7px rgb(52 26 73 / 45%);
+        border-radius: 20px;
+        .builder-image {
+          width: 8em;
+          height: 14vh;
+          border-radius: 20px;
+        }
+        .assistant-cards-tp {
+          @include d-flex(center, center);
+          flex-direction: column;
+          text-align: center;
+          .assistant-cards-para {
+            font-size: small;
+          }
+        }
+        .assistant-round {
+          @include d-flex(center, center);
+          width: 2.7em;
+          height: 6vh;
+          background-color: rgb(10, 159, 189);
+          border-radius: 50%;
+          position: relative;
+          top: 1.5em;
+          .logoo-arrow{
+            font-size: 1.5rem;
+            font-weight: 800;
+          }
+        }
+      }
+    }
+  }
+
+  //   <--------------------------------------------------------------------------------------------------->
+
+ 
+}
